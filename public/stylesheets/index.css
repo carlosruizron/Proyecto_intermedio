@@ -221,4 +221,8 @@ body {
   height: 10vh;
   margin-right: 4vw;
 }
+
+.name {
+  font-weight: bold;
+}
 /*# sourceMappingURL=index.css.map */
