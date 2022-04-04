@@ -45,10 +45,10 @@ header {
       height: 40vh;
     }
     button {
-        padding-top: 1vh;
         border: 0ch;
         background-color: rgb(159, 79, 10);
         border-radius: 20px 20px;
+        margin-bottom: 3vh;
         height: 4vh;
         width: 8vw;
         margin-left: 2vh;
@@ -59,7 +59,9 @@ header {
     }
     button:hover {
         background-color: black;
-        color: rgb(159, 79, 10);
+        a {
+            color: rgb(159, 79, 10);
+        }
     }
 }
 .texto {

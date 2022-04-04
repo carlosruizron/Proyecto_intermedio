@@ -62,10 +62,10 @@ header .navbar .logo {
 }
 
 .perfiles button {
-  padding-top: 1vh;
   border: 0ch;
   background-color: #9f4f0a;
   border-radius: 20px 20px;
+  margin-bottom: 3vh;
   height: 4vh;
   width: 8vw;
   margin-left: 2vh;
@@ -78,6 +78,9 @@ header .navbar .logo {
 
 .perfiles button:hover {
   background-color: black;
+}
+
+.perfiles button:hover a {
   color: #9f4f0a;
 }
 

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0 !important;
+}
+header {
+    background-image: url(/images/zoltan-tasi-ID8pKVA5E9g-unsplash.jpg);
+    background-position: center !important;
+    background-size: cover;
+    background-position-y: 58vh !important;
+    .navbar {
+        height: 40vh;
+        padding-left: 1vw;
+        padding-top: 2vh;
+        .nav-link {
+            color: white !important;
+            margin-bottom: 30vh;
+            font-size: 2vh;
+            padding-left: 1vw !important;
+            font-family: 'Poppins', sans-serif;
+        }
+        .dropdown-menu {
+            margin-top: -30vh !important;
+        }
+        .logo {
+            margin-bottom: 30vh;
+            color: white;
+            font-size: 6vh;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+.formulario {
+    border: 1px solid;
+    width: 90%;
+    height: 63.2vh;
+    margin-top: 3vh !important;
+    margin-left: 5vw !important;
+    .img {
+        padding: 0;
+        img {
+            height: 62.9vh;
+            width: 45vw;
+            
+        }
+    }
+}
+
+.form {
+    padding-top: 13vh;
+    padding-left: 10vw !important;
+    background-image: linear-gradient(rgb(159, 79, 10), rgb(106, 56, 38));
+    p {
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    input {
+        background-image: linear-gradient(rgb(35, 45, 52), rgb(119, 48, 22));
+    }
+    .input1 {
+        margin-left: 0.7vw;
+    }
+    .label {
+        margin-left: 1vw;
+    }
+    button {
+        margin-left: 17vw;
+        border: 0ch;
+        background-color: black;
+        border-radius: 20px 20px;
+        height: 6vh;
+        width: 10vw;
+        color: rgb(159, 79, 10);
+    }
+    button:hover {
+        background-color: rgb(159, 79, 10);
+        color: black;
+    }
+}
+.texto {
+    width: 100%;
+    padding-top: 3vh;
+    p {
+        text-align: center;
+        font-size: 2vw;
+    }
+}
+.a {
+    margin-top: 5vh;
+}
+.name {
+    margin-left: 2.3vw;
+}

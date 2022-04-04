@@ -56,12 +56,15 @@
       <div class="perfiles">
         <% result2.forEach(plate => { %>
         <div class=" card" style="width: 18rem;">
-          <img src="/images/plates.jpg" class="card-img-top" alt="...">
+          <img src="/images/plates/<%= plate.plate_img %>" class="card-img-top" alt="...">
           <div class="card-body">
             <p><%= plate.plate_name %></p>
             <p><%= plate.plate_description %></p>
           </div>
-          <button><a href="/plate/deletePlate/<%= plate.plate_id %>/<%= result[0].chef_id %>">Eliminar</a></button>
+          <div>
+            <button><a href="/plate/deletePlate/<%= plate.plate_id %>/<%= result[0].chef_id %>">Eliminar</a></button>
+          <button><a href="/plate/viewEditForm/<%= plate.plate_id %>">Editar</a></button>
+          </div>
         </div>
         <% }) %>
       </div>

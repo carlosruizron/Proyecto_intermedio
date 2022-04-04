@@ -144,7 +144,7 @@ body {
 }
 
 .perfiles button {
-  padding-top: 1vh;
+  padding-top: 0.5vh;
   border: 0ch;
   background-color: #9f4f0a;
   border-radius: 20px 20px;
@@ -159,6 +159,9 @@ body {
 
 .perfiles button:hover {
   background-color: black;
+}
+
+.perfiles button:hover a:hover {
   color: #9f4f0a;
 }
 
@@ -172,5 +175,50 @@ body {
   background-size: cover;
   padding-top: 40vh;
   margin-top: 5vh !important;
+}
+
+.footer {
+  background-color: #282828;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  margin-top: 7vh;
+}
+
+.footer .sec8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer .display {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20vw;
+}
+
+.footer .display p {
+  margin-left: 1vw;
+  margin-top: 2vh;
+  color: white;
+}
+
+.footer .display img {
+  width: 2vw;
+  height: 3vh;
+}
+
+.footer iframe {
+  width: 20vw;
+  margin-left: 5vw;
+  height: 10vh;
+  margin-right: 4vw;
 }
 /*# sourceMappingURL=index.css.map */

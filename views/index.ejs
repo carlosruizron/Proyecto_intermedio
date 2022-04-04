@@ -87,9 +87,10 @@
       </section>
 
       <!-- Seccion chefs!!!!!!! -->
-      <% result.forEach(chef => { %>
+      
       <section class="row perf">
         <div class="perfiles">
+          <% result.forEach(chef => { %>
           <div class=" card" style="width: 18rem;">
             <img
             src="/images/chefs/<%= chef.img %>"
@@ -102,11 +103,11 @@
               <button><a href="/chef/oneChef/<%= chef.chef_id %>">Ver platos</a></button>
             </div>
           </div>
-  
+          <% }) %>
         </div>
   
       </section>
-      <% }) %>
+      
       <!-- Seccion 6!!!!!!!!!!!1 -->
       <section class="row sec61">
         <div class="col-12 sec6">
@@ -114,6 +115,27 @@
         </div>
       </section>
     </main>  
+
+    <footer class="footer">
+      <div class="row sec8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.1369067162805!2d-4.5181298!3d36.5990116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fd20670818d5%3A0xb04d1688a6bccbcf!2sN%C3%B6sha%20Vip%20Club!5e0!3m2!1ses!2ses!4v1644570778340!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="display">
+          
+          <img src="/images/outline_email_black_24dp.png" alt="">
+          <p>foodfair@hotmail.com</p>
+        </div>
+        <div class="display">
+          <img src="/images/instagram.png" alt="">
+          <p>@foodfair</p>
+        </div>
+        <div class="display">
+          <img src="/images/outline_call_black_24dp.png" alt="">
+          <p>987456123</p>
+        </div>
+        
+      </div>
+
+    </footer>
     
  
 

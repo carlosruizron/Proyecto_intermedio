@@ -115,7 +115,7 @@ body{
       height: 40vh;
     }
     button {
-        padding-top: 1vh;
+        padding-top: 0.5vh;
         border: 0ch;
         background-color: rgb(159, 79, 10);
         border-radius: 20px 20px;
@@ -125,10 +125,13 @@ body{
             text-decoration: none;
             color: black;
         }
+        
     }
     button:hover {
         background-color: black;
-        color: rgb(159, 79, 10);
+        a:hover{
+            color: rgb(159, 79, 10);
+        }
     }
 }
 .sec61 {
@@ -141,4 +144,37 @@ body{
     padding-top: 40vh;
     margin-top: 5vh !important;
 
+}
+.footer {
+    background-color: rgb(40,40,40);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 7vh;
+    .sec8 {
+        display: flex;
+        width: 100%;
+    }
+    
+    
+    .display {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 20vw;
+        p {
+            margin-left: 1vw;
+            margin-top: 2vh;
+            color: white;
+        }
+        img {
+            width: 2vw;
+            height: 3vh;
+        }
+    }
+    iframe {
+        width: 20vw;
+        margin-left: 5vw;
+        height: 10vh;
+        margin-right: 4vw;
+    }
 }
