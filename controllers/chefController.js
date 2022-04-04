@@ -34,12 +34,27 @@ class ChefController {
                 res.render("login", {result: "Los datos introducidos son incorrectos"});
             }
             else{
-                res.redirect(`/chef/oneChef/${result[0].chef_id}`);
+                res.redirect(`/chef/oneUser/${result[0].chef_id}`);
             }
         })
     }
 
     // Nos muestra la vista un chef
+    viewOneUser = (req,res) => {
+        let id = req.params.chef_id;
+        let sql = `select * from chef where chef_id = ${id}`;
+        let sql2 = `select * from plate where chef_id = ${id}`;
+        connection.query(sql, (error, result) => {
+            if (error) throw error;
+            connection.query(sql2, (error, result2) => {
+                if (error) throw error;
+                res.render("oneUser", {result, result2});
+            })
+            
+        })
+    }
+
+    // Nos muestra el cocinero sin poder editar ni nada
     viewOneChef = (req,res) => {
         let id = req.params.chef_id;
         let sql = `select * from chef where chef_id = ${id}`;
@@ -53,6 +68,7 @@ class ChefController {
             
         })
     }
+
 
     // Nos enseña la vista para editar el chef
     viewEditForm = (req, res) => {
@@ -85,7 +101,7 @@ class ChefController {
         sql += `where chef_id = ${id}`;
         connection.query(sql, (error, result) => {
             if (error) throw error;
-            res.redirect(`/chef/oneChef/${id}`);
+            res.redirect(`/chef/oneUser/${id}`);
         })
     }
 

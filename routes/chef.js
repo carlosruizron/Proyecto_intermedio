@@ -15,6 +15,9 @@ router.get("/formLogin", chefController.viewFormLogin);
 // localhost:3000/chef/login
 router.post("/login", chefController.login);
 
+// localhost:3000/chef/oneUSer/:chef_id
+router.get("/oneUser/:chef_id",chefController.viewOneUser);
+
 // localhost:3000/chef/oneChef/:chef_id
 router.get("/oneChef/:chef_id",chefController.viewOneChef);
 

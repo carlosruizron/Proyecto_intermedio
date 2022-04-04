@@ -1,0 +1,82 @@
+header {
+    background-image: url(/images/zoltan-tasi-ID8pKVA5E9g-unsplash.jpg);
+    background-position: center !important;
+    background-size: cover;
+    background-position-y: 58vh !important;
+    .navbar {
+        height: 40vh;
+        padding-left: 1vw;
+        padding-top: 2vh;
+        .nav-link {
+            color: white !important;
+            margin-bottom: 30vh;
+            font-size: 2vh;
+            padding-left: 1vw !important;
+            font-family: 'Poppins', sans-serif;
+        }
+        .dropdown-menu {
+            margin-top: -30vh !important;
+        }
+        .logo {
+            margin-bottom: 30vh;
+            color: white;
+            font-size: 6vh;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+body {
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0 !important;
+}
+
+.row {
+    width: 90%;
+    height: 50vh;
+    margin-top: 5vh !important;
+    margin-left: 5vw !important;
+    .img {
+        background-image: url(/images/gourmet.jpg);
+        background-position-y: 55vh;
+        background-size: cover;
+    }
+}
+
+.form {
+    padding-top: 8vh;
+    padding-left: 3vw !important;
+    background-image: linear-gradient(rgb(159, 79, 10), rgb(106, 56, 38));
+    p {
+        font-weight: bold;
+        font-size: 3vw;
+
+    }
+    .input1 {
+        margin-left: 1.5vw;
+       
+    }
+    label {
+        margin-left: 1vw;
+        margin-top: 2vh !important;
+    }
+    button {
+        margin-top: 2vh;
+        margin-left: 17vw;
+        border: 0ch;
+        background-color: black;
+        border-radius: 20px 20px;
+        height: 4vh;
+        width: 7vw;
+        color: rgb(159, 79, 10);
+    }
+    button:hover {
+        background-color: rgb(159, 79, 10);
+        color: black;
+    }
+    input {
+        background-image: linear-gradient(rgb(35, 45, 52), rgb(119, 48, 22));
+    }
+}
+.formulario {
+    border: 1px solid;
+}

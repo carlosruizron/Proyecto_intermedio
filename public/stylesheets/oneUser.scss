@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+header {
+    background-image: url(/images/zoltan-tasi-ID8pKVA5E9g-unsplash.jpg);
+    background-position: center !important;
+    background-size: cover;
+    background-position-y: 58vh !important;
+    .navbar {
+        height: 40vh;
+        padding-left: 1vw;
+        padding-top: 2vh;
+        .nav-link {
+            color: white !important;
+            margin-bottom: 30vh;
+            font-size: 2vh;
+            padding-left: 1vw !important;
+            font-family: 'Poppins', sans-serif;
+        }
+        .dropdown-menu {
+            margin-top: -30vh !important;
+        }
+        .logo {
+            margin-bottom: 30vh;
+            color: white;
+            font-size: 6vh;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+.perf {
+    width: 100%;
+}
+.perfiles {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    margin-top: 5vh !important;
+    .card {
+        box-shadow: 1px 10px 20px 5px lightblue;
+    }
+    img {
+      height: 40vh;
+    }
+    button {
+        padding-top: 1vh;
+        border: 0ch;
+        background-color: rgb(159, 79, 10);
+        border-radius: 20px 20px;
+        height: 4vh;
+        width: 8vw;
+        margin-left: 2vh;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    button:hover {
+        background-color: black;
+        color: rgb(159, 79, 10);
+    }
+}
+.texto {
+    width: 100%;
+    padding-top: 3vh;
+    p {
+        text-align: center;
+        font-size: 2vw;
+    }
+}
+.logos {
+    display: flex;
+    img {
+        width: 2vh;
+        height: 2vh;
+        margin-top: 0.4vh;
+    }
+    p {
+        margin-left: 1vw;
+    }
+}

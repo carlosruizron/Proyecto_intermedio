@@ -1,0 +1,32 @@
+header {
+  background-image: url(/images/zoltan-tasi-ID8pKVA5E9g-unsplash.jpg);
+  background-position: center !important;
+  background-size: cover;
+  background-position-y: 58vh !important;
+}
+
+header .navbar {
+  height: 40vh;
+  padding-left: 1vw;
+  padding-top: 2vh;
+}
+
+header .navbar .nav-link {
+  color: white !important;
+  margin-bottom: 30vh;
+  font-size: 2vh;
+  padding-left: 1vw !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+header .navbar .dropdown-menu {
+  margin-top: -30vh !important;
+}
+
+header .navbar .logo {
+  margin-bottom: 30vh;
+  color: white;
+  font-size: 6vh;
+  font-family: 'Poppins', sans-serif;
+}
+/*# sourceMappingURL=navbar.css.map */

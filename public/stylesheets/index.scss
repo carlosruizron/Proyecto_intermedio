@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.encunciado1 {
+   text-align: center !important;
+   padding-top: 7vh;
+   font-family: 'Poppins', sans-serif;
+   font-size: 3vh;
+   font-weight: bold;
+}
+.encunciado2 {
+    text-align: center !important;
+}
+.pulpo {
+    margin-top: 7vh !important;
+    width: 100% ;
+    padding-top: 2vh;
+    img {
+        width:100%;
+    }
+    .parrafada1 {
+        padding-top: 2vh;
+        text-align: center;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        p {
+            padding-top: 3vh;
+            font-weight: bold;
+            font-size: 2vh;
+        }
+        img {
+            width: 3vh;
+            padding-top: 3vh;
+        }
+    }
+}
+
+.sec1 {
+    padding-left: 1.4vw;
+    height: 33vh;
+    background-color: rgb(159, 79, 10);
+}
+.sec2 {
+    margin-top: 0vh !important;
+    
+   .foto {
+       background-image: url(/images/farhad-ibrahimzade-zWaym1HI1G4-unsplash.jpg);
+       background-position: center;
+       background-size: cover;
+       width: 46vh;
+       height: 29vh;
+       margin-left: -0.5vw !important;
+   }
+}
+
+.sec3 {
+    height: 40vh;
+   .img {
+    background-image: url(/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   } 
+}
+.sec3 {
+    width: 100%;
+}
+.texto {
+    border-bottom: 2px solid;
+    .titulo {
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    p {
+        padding-top: 3vh;
+    }
+    button {
+        padding-top: 1vh;
+        border: 0ch;
+        background-color: rgb(159, 79, 10);
+        border-radius: 20px 20px;
+        height: 4vh;
+        width: 10vw;
+    }
+    button:hover {
+        background-color: black;
+        color: rgb(159, 79, 10);
+    }
+}
+.sec4 {
+    height: 40vh;
+    width: 100%;
+   .img {
+    background-image: url(/images/klara-kulikova-CPMZguYURMw-unsplash.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   } 
+   button {
+       width: 15vw !important;
+   }
+}
+.perf {
+    width: 100%;
+}
+.perfiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    margin-top: 5vh !important;
+    .card {
+        box-shadow: 1px 10px 20px 5px lightblue;
+    }
+    img {
+      height: 40vh;
+    }
+    button {
+        padding-top: 1vh;
+        border: 0ch;
+        background-color: rgb(159, 79, 10);
+        border-radius: 20px 20px;
+        height: 4vh;
+        width: 15vw;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    button:hover {
+        background-color: black;
+        color: rgb(159, 79, 10);
+    }
+}
+.sec61 {
+    width: 100.9%;
+}
+.sec6 {
+    background-image: url(/images/malgorzata-bujalska-ROPCsstpxkg-unsplash.jpg);
+    background-position-y: 60vh;
+    background-size: cover;
+    padding-top: 40vh;
+    margin-top: 5vh !important;
+
+}

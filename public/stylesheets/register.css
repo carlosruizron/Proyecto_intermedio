@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0 !important;
+}
+
+header {
+  background-image: url(/images/zoltan-tasi-ID8pKVA5E9g-unsplash.jpg);
+  background-position: center !important;
+  background-size: cover;
+  background-position-y: 58vh !important;
+}
+
+header .navbar {
+  height: 40vh;
+  padding-left: 1vw;
+  padding-top: 2vh;
+}
+
+header .navbar .nav-link {
+  color: white !important;
+  margin-bottom: 30vh;
+  font-size: 2vh;
+  padding-left: 1vw !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+header .navbar .dropdown-menu {
+  margin-top: -30vh !important;
+}
+
+header .navbar .logo {
+  margin-bottom: 30vh;
+  color: white;
+  font-size: 6vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formulario {
+  border: 1px solid;
+  width: 90%;
+  height: 50vh;
+  margin-top: 3vh !important;
+  margin-left: 5vw !important;
+}
+
+.formulario .img {
+  background-image: url(/images/roberta-sorge-IywM7AQTZcM-unsplash.jpg);
+  background-position-y: 80vh;
+  background-size: cover;
+}
+
+.form {
+  padding-top: 3vh;
+  padding-left: 10vw !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9f4f0a), to(#6a3826));
+  background-image: linear-gradient(#9f4f0a, #6a3826);
+}
+
+.form p {
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.form input {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#232d34), to(#773016));
+  background-image: linear-gradient(#232d34, #773016);
+}
+
+.form .input1 {
+  margin-left: 0.7vw;
+}
+
+.form .label {
+  margin-left: 1vw;
+}
+
+.form button {
+  margin-top: 2vh;
+  margin-left: 17vw;
+  border: 0ch;
+  background-color: black;
+  border-radius: 20px 20px;
+  height: 4vh;
+  width: 7vw;
+  color: #9f4f0a;
+}
+
+.form button:hover {
+  background-color: #9f4f0a;
+  color: black;
+}
+
+.texto {
+  width: 100%;
+  padding-top: 3vh;
+}
+
+.texto p {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.a {
+  margin-top: 5vh;
+}
+
+.input2 {
+  margin-left: 1.8vw;
+}
+
+.input3 {
+  margin-left: 2.4vw;
+}
+
+.label1 {
+  margin-left: -1.5vw !important;
+}
+
+.input4 {
+  margin-right: 3vw !important;
+}
+/*# sourceMappingURL=register.css.map */

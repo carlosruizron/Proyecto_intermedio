@@ -5,34 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,400;1,200;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <%- include('navbar') %>
-    
 
-    <% result.forEach(chef => { %>
-        <div class="row">
-            <div class="col-3">
-                <img
-                src="/images/chefs/<%= chef.img %>"
-                class="card-img-top"
-                alt="..."
-                />
-                <h5><%= chef.name %> <%= chef.surname %></h5>
-                <p><%= chef.history_description %></p>
-                <p><%= chef.email %></p>
-                <p><%= chef.phone %></p>
-                <button><a href="/chef/oneChef/<%= chef.chef_id %>">Ver platos</a></button>
-            </div>
+    <main>
+
+
+      <!-- Seccion1 !!!!!!!!!!! -->
+      <section class="sec">
+        <p class="encunciado1">Diviertete con nuestros chefs mas destacados en su especialidad</p>
+        <p class="encunciado2">Todo elaborado con productos de alta calidad y procedentes de diversos paises del mundo con tal de traer cultura y sabor.</p>
+      </section>
+      
+      
+
+      <!-- Seccion 2!!!!!!!!!!!! -->
+      <section class="sec1">
+        <div class="row pulpo">
+          <div class="col-4">
+            <img src="/images/Feria de pinchos de otoño en Cambados - Diario de Gastronomía_ Cocina, vino, gastronomía y recetas gourmet.jpg" alt="">
+          </div>
+          <div class="col-4 parrafada1">
+            <img src="/images/outline_public_black_24dp.png" alt="">
+            <p>Viaja a distintos lugares del mundo.</p>
+            <span>Nuestros chefs viajan por los lugares mas remotos del mundo con tal de traernos las mejores experiencias</span>
+          </div>
+          <div class="col-4">
+            <img src="/images/bern-fresen-inPyTzxhXD0-unsplash.jpg" alt="">
+          </div>
         </div>
-    <% }) %>
+      </section>
+
+      <section class="sec1">
+        <div class="row pulpo sec2">
+          <div class="col-4 parrafada1">
+            <img src="/images/outline_coronavirus_black_24dp.png" alt="">
+            <p>Seguridad ante el Coronavirus</p>
+            <span>Nuestras instalaciones son desinfectadas cada 30 minutos y nuestos trabajadores cumplen todas las normas de sanidad.</span>
+          </div>
+          <div class="col-4 foto">
+            
+          </div>
+          <div class="col-4 parrafada1 prob">
+            <img src="/images/outline_nightlife_black_24dp.png" alt="">
+            <p>Ocio total en nuestras instalaciones.</p>
+            <span>Terminado el postre proporcionamos una bebida de invitacion a elegir mientras les guiamos a nuestro Show-Room.</span>
+          </div>
+        </div>
+      </section>
 
 
 
+      <!-- Seccion 3!!!!!!!!!!!!!!!! -->
+      <section class="row sec3">
+        <div class="col-6 img">
+          
+        </div>
+        <div class="col-6 py-5 px-5 texto">
+          <p class="titulo">5 Estrellas</p>
+          <p>Llevamos mas de 3 años ganando el premio al mejor restaurante de la ciudad. Nos han calificado como mejor servicio y calidad de nuestros productos.</p>
+          <button>Ver reseñas</button>
+        </div>
+      </section>
 
+      <section class="row sec4">
+        <div class="col-6 py-5 px-5 texto">
+          <p class="titulo">Cata de vinos</p>
+          <p>Le damos la opcion al cliente para que tenga la oportunidad de realizar una cata de vinos de las mejores etiquetas. Aqui nos acompaña el experto Antonio Rueda, que nos explica y da a probar 10 tipos distintos de vino.</p>
+          <button>Mas información</button>
+        </div>
+        <div class="col-6 img">
+          
+        </div>
+        
+      </section>
 
+      <!-- Seccion chefs!!!!!!! -->
+      <% result.forEach(chef => { %>
+      <section class="row perf">
+        <div class="perfiles">
+          <div class=" card" style="width: 18rem;">
+            <img
+            src="/images/chefs/<%= chef.img %>"
+            class="card-img-top"
+            alt="..."
+             />
+            <div class="card-body">
+              <p><%= chef.name %> <%= chef.surname %></p>
+              <p><%= chef.history_description %></p>
+              <button><a href="/chef/oneChef/<%= chef.chef_id %>">Ver platos</a></button>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section>
+      <% }) %>
+      <!-- Seccion 6!!!!!!!!!!!1 -->
+      <section class="row sec61">
+        <div class="col-12 sec6">
 
+        </div>
+      </section>
+    </main>  
+    
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

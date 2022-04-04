@@ -15,7 +15,7 @@ class PlateController{
     registerplate = (req, res) => {
         let {chef_name, plate_name, plate_description} = req.body;
         let sql = `insert into plate (plate_name, plate_description, chef_id) values ('${plate_name}', '${plate_description}', '${chef_name}')`;
-        if ( req.file != null){
+        if ( req.file != undefined){
             let image = req.file.filename;
             sql = `insert into plate (plate_name, plate_description, plate_img, chef_id) values ('${plate_name}', '${plate_description}', '${image}', '${chef_name}')`;
         }
@@ -44,7 +44,7 @@ class PlateController{
         let sql = `update plate set plate_name = '${plate_name}', plate_description = '${plate_description}' where plate_id = ${plate_id}`;
         connection.query(sql, (error, result) => {
             if (error) throw error;
-            res.redirect(`/chef/oneChef/${chef_id}`)
+            res.redirect(`/chef/oneUser/${chef_id}`)
         })
     }
 
@@ -53,7 +53,7 @@ class PlateController{
         let sql = `delete from plate where plate_id = ${plate_id}`;
         connection.query(sql , (error, result) => {
             if (error) throw error;
-            res.redirect(`/chef/oneChef/${chef_id}`);
+            res.redirect(`/chef/oneUser/${chef_id}`);
         })
     }
     
