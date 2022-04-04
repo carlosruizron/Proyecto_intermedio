@@ -105,6 +105,15 @@ class ChefController {
         })
     }
 
+    deleteChef = (req, res) => {
+        let chef_id = req.params.chef_id;
+        let sql = `delete from chef where chef_id = ${chef_id}`;
+        connection.query(sql, (error, result) => {
+            if (error) throw error;
+            res.redirect("/");
+        })
+    }
+
 
 
 

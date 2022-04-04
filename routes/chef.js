@@ -28,4 +28,7 @@ router.get("/viewEditForm/:chef_id/", chefController.viewEditForm);
 // localhost:3000/chef/saveChanges/:chef_id
 router.post("/saveChanges/:chef_id", uploadImage("chefs"), chefController.saveChanges);
 
+// localhost:3000/chef/deleteChef/:chef_id
+router.get("/deleteChef/:chef_id", chefController.deleteChef)
+
 module.exports = router;
